@@ -5,7 +5,7 @@ from .models import Bd
 
 
 def index(request):
-    s = 'Объявление'
+    s = 'Объявления \r\n\r\n'
     for bb in Bd.objects.all():
-        s += bb.title + bb.content
-    return HttpResponse(s)
+        s += bb.title +'\r\n' + bb.content + '\r\n\r\n'
+    return HttpResponse(s, content_type='text/plain', charset='utf-8')
