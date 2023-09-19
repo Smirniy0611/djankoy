@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Bd
+from .models import Bd, Rubric
 
 
 # Register your models here.
@@ -10,3 +10,4 @@ class BdAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Bd, BdAdmin)
+admin.site.register(Rubric)
