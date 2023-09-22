@@ -4,7 +4,7 @@ from .models import Bd, Rubric
 
 # Register your models here.
 class BdAdmin(admin.ModelAdmin):
-    list_display = ('title', 'content', 'price', 'published')
+    list_display = ('rubric', 'title', 'content', 'price', 'published')
     list_display_links = ('title', 'content')
     search_fields = ('title', 'content')
 
